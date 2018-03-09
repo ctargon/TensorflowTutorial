@@ -27,10 +27,6 @@ def main():
 	x = tf.placeholder(tf.float32, shape=[None, 784])
 	y_ = tf.placeholder(tf.float32, shape=[None, 10])
 
-	# initialize weights and biases to be used
-	W = tf.Variable(tf.zeros([784,10]))
-	b = tf.Variable(tf.zeros([10]))
-
 	# reshape x to be an image input
 	x_image = tf.reshape(x, [-1,28,28,1])
 
